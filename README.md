@@ -2,7 +2,7 @@ Geleceğin Sürdürülebilir Şehirleri: Akıllı Şehir Yatırım Asistanı
 
 Bu proje, Türkiye'deki şehirlerin sürdürülebilirlik ve yatırım potansiyelini analiz etmek için geliştirilmiş, yapay zeka destekli interaktif bir harita uygulamasıdır. Kullanıcılar, kendi yatırım vizyonlarına göre belirledikleri kriterlerle veya yapay zeka asistanının önerileriyle potansiyeli en yüksek olan şehirleri dinamik bir harita üzerinde görselleştirebilirler.
 
-Proje, Supabase veritabanı altyapısını ve OpenRouter üzerinden erişilen Google Gemini Flash 2.5 yapay zeka modelini kullanarak yatırımcılara, şehir planlamacılarına ve araştırmacılara güçlü bir karar destek aracı sunar.
+Proje, Supabase veritabanı altyapısını ve OpenRouter üzerinden erişilen Deepseek yapay zeka modelini kullanarak yatırımcılara, şehir planlamacılarına ve araştırmacılara güçlü bir karar destek aracı sunar.
 
 🌟 Temel Özellikler
 🤖 Yapay Zeka Asistanı (Google Gemini Flash 2.5): OpenRouter platformu üzerinden çalışan asistan, "tarım yatırımı için en uygun şehirler hangileri?" gibi doğal dil sorgularını anlar ve size özel bir analiz senaryosu önerir.
@@ -22,7 +22,7 @@ Frontend: HTML5, CSS3, JavaScript (ES Modules)
 
 Haritalama: Leaflet.js
 
-Yapay Zeka: Google Gemini Flash 2.5 (via OpenRouter)
+Yapay Zeka: Deepseek (via OpenRouter)
 
 Veritabanı (Backend): Supabase
 
@@ -84,6 +84,16 @@ Açılan menüden "Open with Live Server" seçeneğine tıklayın.
 Bu işlem, projenizi varsayılan web tarayıcınızda otomatik olarak açacak ve çalışır hale getirecektir.
 
 Artık projeyi kullanmaya hazırsınız!
+
+Ek olarak projeyi internet üzerinden görmek için bu linki ziyaret edebilirsiniz. 
+    https://mexicali-rose-demo.vercel.app/
+
+ 📬 İletişim & Geri Bildirim
+    Daha fazla bilgi almak, değerli önerilerinizi ve fikirlerinizi bizimle paylaşmak için aşağıdaki e-posta adreslerine mesajınızı iletebilirsiniz. 
+            👇
+            ✉️ kocabiyik703@gmail.com
+            ✉️ farukkezerr@gmail.com
+
 
 
 
