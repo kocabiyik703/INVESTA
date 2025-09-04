@@ -63,9 +63,7 @@ Bir Supabase API anahtarı
 
 Kurulum Adımları
 1. Projeyi İndirin veya Klonlayın
-Projeyi bilgisayarınıza indirin veya Git kullanarak klonlayın:
-git clone https://github.com/kullanici-adiniz/proje-adiniz.git
-cd proje-adiniz
+Projeyi bilgisayarınıza indirin.
 
 🖥️ Projeyi Çalıştırma
 Proje, internet üzerindeki bir veritabanına bağlandığı ve ES modülleri kullandığı için bir yerel sunucu (local server) üzerinden çalıştırılmalıdır. Bunun için en kolay yöntem Visual Studio Code ve "Live Server" eklentisidir.
@@ -84,4 +82,5 @@ Açılan menüden "Open with Live Server" seçeneğine tıklayın.
 Bu işlem, projenizi varsayılan web tarayıcınızda otomatik olarak açacak ve çalışır hale getirecektir.
 
 Artık projeyi kullanmaya hazırsınız!
+
 
