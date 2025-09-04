@@ -1,4 +1,4 @@
-Geleceğin Sürdürülebilir Şehirleri: Akıllı Şehir Yatırım Asistanı
+**Geleceğin Sürdürülebilir Şehirleri: Akıllı Şehir Yatırım Asistanı**
 
 Bu proje, Türkiye'deki şehirlerin sürdürülebilirlik ve yatırım potansiyelini analiz etmek için geliştirilmiş, yapay zeka destekli interaktif bir harita uygulamasıdır. Kullanıcılar, kendi yatırım vizyonlarına göre belirledikleri kriterlerle veya yapay zeka asistanının önerileriyle potansiyeli en yüksek olan şehirleri dinamik bir harita üzerinde görselleştirebilirler.
 
@@ -30,14 +30,14 @@ Markdown İşleme: Marked.js (Yapay zeka yanıtlarını formatlamak için)
 
 📂 **Proje Dosya Yapısı**
 ```plaintext
-├── 📁 data_csv                      # CSV verilerinin saklandığı klasör
+├── 📁 data_csv                      # CSV ve Excel verilerinin saklandığı klasör
 │   ├── 📄 TUM_VERILER_GSS.xlsx      # Genel veri seti, tüm verileri içerir.
 │   ├── 📄 agirliklar_rows.csv       # Ağırlıklandırma için kullanılan veri.
 │   ├── 📄 grup_rows.csv             # Veri türü gruplarına ait veriler.
-│   ├── 📄 iller_rows.csv            # Türkiye illerine ait veriler.
-│   ├── 📄 senaryo_rows.csv          # Ön tanımlı senaryolar için veriler.
-│   ├── 📄 veri_turleri_rows.csv     # Sistemdeki tüm veri metrikleri.
-│   └── 📄 veriler_rows.csv          # Ağırlıklandırılmış veya filtrelenmiş veriler.
+│   ├── 📄 iller_rows.csv            # Türkiye illeri plaka sırasına göre.
+│   ├── 📄 senaryo_rows.csv          # Ön tanımlı senaryolar.
+│   ├── 📄 veri_turleri_rows.csv     # Sistemdeki tüm veri metrikleri ve senaryolar için açıklaması.
+│   └── 📄 veriler_rows.csv          # Hazır senaryolar için ağırlıklandırılmış veya filtrelenmiş veriler.
 ├── 📁 src
 │   ├── 📁 css
 │   │   └── 📄 style.css            # Stil dosyası
@@ -104,7 +104,7 @@ Bu işlem, projenizi varsayılan web tarayıcınızda otomatik olarak açacak ve
 
 Artık projeyi kullanmaya hazırsınız!
 
-Ek olarak projeyi internet üzerinden görmek için bu linki ziyaret edebilirsiniz. 
+**Ek olarak projeyi internet üzerinden görmek için bu linki ziyaret edebilirsiniz.** 
     
     https://mexicali-rose-demo.vercel.app/
 
@@ -117,6 +117,7 @@ Ek olarak projeyi internet üzerinden görmek için bu linki ziyaret edebilirsin
 
             
             ✉️ farukkezerr@gmail.com
+
 
 
 
