@@ -86,13 +86,19 @@ Bu işlem, projenizi varsayılan web tarayıcınızda otomatik olarak açacak ve
 Artık projeyi kullanmaya hazırsınız!
 
 Ek olarak projeyi internet üzerinden görmek için bu linki ziyaret edebilirsiniz. 
+    
     https://mexicali-rose-demo.vercel.app/
 
  📬 İletişim & Geri Bildirim
     Daha fazla bilgi almak, değerli önerilerinizi ve fikirlerinizi bizimle paylaşmak için aşağıdaki e-posta adreslerine mesajınızı iletebilirsiniz. 
+           
             👇
+            
             ✉️ kocabiyik703@gmail.com
+
+            
             ✉️ farukkezerr@gmail.com
+
 
 
 
