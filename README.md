@@ -94,7 +94,7 @@ src/js/ui/aiAssistant.js dosyasını açıp
     //this.apiKey = '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'; // OpenRouter API anahtarı (DeepSeek)
     this.apiKey = 'SİZİN_API_ANAHTARINIZ'; // OpenRouter API anahtarı
 
-Link*: https://docs.google.com/document/d/1ANKJwP8dTDk-Tj2SzEPtDTnketL0bmTPhdOliluckwE/edit?usp=sharing
+*Link: https://docs.google.com/document/d/1ANKJwP8dTDk-Tj2SzEPtDTnketL0bmTPhdOliluckwE/edit?usp=sharing
 
 Sol taraftaki Dosya Gezgini'nden index.html dosyasına sağ tıklayın.
 
@@ -117,6 +117,7 @@ Artık projeyi kullanmaya hazırsınız!
 
             
             ✉️ farukkezerr@gmail.com
+
 
 
 
