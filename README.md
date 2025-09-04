@@ -1,4 +1,5 @@
 Geleceğin Sürdürülebilir Şehirleri: Akıllı Şehir Yatırım Asistanı
+
 Bu proje, Türkiye'deki şehirlerin sürdürülebilirlik ve yatırım potansiyelini analiz etmek için geliştirilmiş, yapay zeka destekli interaktif bir harita uygulamasıdır. Kullanıcılar, kendi yatırım vizyonlarına göre belirledikleri kriterlerle veya yapay zeka asistanının önerileriyle potansiyeli en yüksek olan şehirleri dinamik bir harita üzerinde görselleştirebilirler.
 
 Proje, Supabase veritabanı altyapısını ve OpenRouter üzerinden erişilen Google Gemini Flash 2.5 yapay zeka modelini kullanarak yatırımcılara, şehir planlamacılarına ve araştırmacılara güçlü bir karar destek aracı sunar.
@@ -83,6 +84,7 @@ Açılan menüden "Open with Live Server" seçeneğine tıklayın.
 Bu işlem, projenizi varsayılan web tarayıcınızda otomatik olarak açacak ve çalışır hale getirecektir.
 
 Artık projeyi kullanmaya hazırsınız!
+
 
 
 
