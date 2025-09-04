@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geleceğin Sürdürülebilir Şehirleri</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Supabase Client Library -->
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <!-- Marked.js for Markdown to HTML conversion -->
+    <script src="https://cdn.jsdelivr.net/npm/marked@9.1.6/marked.min.js"></script>
+</head>
+<body>
+    <div id="map"></div>
+    
+    <!-- Sağ tarafta açılıp kapanabilen sekme -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="header-content">
+                <div class="header-text">
+                    <h3>Akıllı Şehir Yatırım Asistanı</h3>
+                </div>
+            </div>
+            <button class="close-btn" id="closeSidebar">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <!-- Açıklama Metni -->
+            <div class="sidebar-intro">
+                <div class="intro-badge" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12" y2="8"></line>
+                    </svg>
+                </div>
+                <p>
+                    Yatırım kararlarınızın merkezine vizyonunuzu alın. Sizin için en kritik başarı faktörlerini seçip 1'den 10'a kadar önem derecesi vererek Türkiye'nin potansiyel haritasını anında oluşturun. Nereden başlayacağınızdan emin değilseniz, farklı yatırımcı profilleri için hazırladığımız Hızlı Senaryoları keşfederek ilham alabilir veya size özel bir senaryo önermesi için yapay zeka asistanımızı kullanabilirsiniz.
+                </p>
+            </div>
+            <!-- Ana bölüm -->
+            <div class="main-section">
+                <div class="main-section-header">
+                    <div class="section-header-content">
+                        <h2>Özelleştirilmiş Senaryo Oluştur</h2>
+                    </div>
+                    <span class="main-toggle-icon">▼</span>
+                </div>
+                                <div class="main-section-content" id="main-section-content">
+                    <!-- Gruplar dinamik olarak JavaScript ile oluşturulacak -->
+                    
+                    <!-- Senaryo Uygulama Butonu -->
+                    <div class="scenario-action-section">
+                        <button class="scenario-clear-btn" id="clearScenarioBtn" title="Önceki seçimleri temizle">
+                            <span class="btn-text">TEMİZLE</span>
+                        </button>
+                        <button class="scenario-apply-btn" id="applyScenarioBtn">
+                            <span class="btn-text">UYGULA</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hızlı Senaryolar bölümü -->
+            <div class="main-section">
+                <div class="main-section-header" id="quick-scenarios-header">
+                    <div class="section-header-content">
+                        <h2>Hızlı Senaryo Kullan</h2>
+                    </div>
+                    <span class="main-toggle-icon">▼</span>
+                </div>
+                <div class="main-section-content" id="quick-scenarios-content">
+                    <!-- Hızlı senaryolar buraya gelecek -->
+                </div>
+            </div>
+            
+
+
+        </div>
+    </div>
+    
+    <!-- Sekmeyi açan buton -->
+    <button class="open-sidebar-btn" id="openSidebar">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+    </button>
+    
+    <!-- Katman Seçimi Butonu - Sol üst (zoom tuşlarının altı) -->
+    <button class="layer-control-btn" id="layerControlBtn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12,2 2,7 12,12 22,7 12,2"></polygon>
+            <polyline points="2,17 12,22 22,17"></polyline>
+            <polyline points="2,12 12,17 22,12"></polyline>
+        </svg>
+    </button>
+    
+    <!-- AI Chat butonu - Sol alt -->
+    <button class="ai-chat-btn has-label" id="aiChatBtn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="7" width="18" height="12" rx="3" ry="3"></rect>
+            <path d="M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"></path>
+            <circle cx="9" cy="13" r="1"></circle>
+            <circle cx="15" cy="13" r="1"></circle>
+            <path d="M12 17c1.2 0 2-.6 2-1.5"></path>
+        </svg>
+        <span class="ai-chat-label">Yapay Zeka Asistanı</span>
+    </button>
+    
+    <!-- Katman Seçimi Popup -->
+    <div class="layer-control-popup" id="layerControlPopup">
+
+        <div class="layer-popup-content">
+            <div class="basemap-selection">
+                <div class="basemap-option">
+                    <input type="radio" id="popup-basemap-openstreetmap" name="popupBasemapLayer" value="openstreetmap" checked>
+                    <label for="popup-basemap-openstreetmap">OSM Temel</label>
+                </div>
+                <div class="basemap-option">
+                    <input type="radio" id="popup-basemap-hot" name="popupBasemapLayer" value="hot">
+                    <label for="popup-basemap-hot">OSM Sokak</label>
+                </div>
+                <div class="basemap-option">
+                    <input type="radio" id="popup-basemap-dark" name="popupBasemapLayer" value="dark">
+                    <label for="popup-basemap-dark">OSM Gece</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- AI Chatbox Popup -->
+    <div class="ai-chatbox-popup" id="aiChatboxPopup">
+        <!-- Chat Header -->
+        <div class="chat-header">
+            <div class="chat-header-left">
+                <div class="chat-icon">💬</div>
+                <h3 class="chat-title">Yapay Zeka Asistanı</h3>
+                <div class="chat-status"></div>
+            </div>
+            <div class="chat-header-right">
+                <button class="chat-control-btn" id="refreshChatBtn" title="Yenile">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="23 4 23 10 17 10"></polyline>
+                        <polyline points="1 20 1 14 7 14"></polyline>
+                        <path d="m3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                    </svg>
+                </button>
+                <button class="chat-control-btn" id="closeChatBtn" title="Kapat">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Chat Messages Area -->
+        <div class="chat-messages" id="chatMessages">
+            <!-- Welcome Message -->
+            <div class="message">
+                <div class="message-content">
+                    <div class="message-bubble ai">
+                        Merhaba! Ben akıllı şehir yatırım analizi asistanınızım.<br>
+                        <br>
+                        Size yatırım potansiyeli analizi yapmanızda yardımcı olabilirim.<br>
+                        <br>
+                        Hangi tür yatırım yapmayı planlıyorsunuz?<br> 
+                        <br>
+                        Size en uygun veri türlerini ve önem derecelerini önerebilirim.
+                    </div>
+                    <div class="message-time ai">13:30</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Chat Input Area -->
+        <div class="chat-input-area">
+            <div class="chat-input-container">
+                <textarea 
+                    id="chatInput" 
+                    class="chat-input"
+                    placeholder="Mesajınızı yazın..."
+                    rows="1"
+                ></textarea>
+                <button id="chatSendBtn" class="chat-send-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="module" src="src/js/index.js"></script>
