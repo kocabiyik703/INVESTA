@@ -74,6 +74,7 @@ Live Server eklentisi
 
 Adımlar
 Proje klasörünü Visual Studio Code ile açın.
+Eğer yüklü değilse Live Server eklentisini kurun.
 
 Sol taraftaki Dosya Gezgini'nden index.html dosyasına sağ tıklayın.
 
@@ -82,5 +83,6 @@ Açılan menüden "Open with Live Server" seçeneğine tıklayın.
 Bu işlem, projenizi varsayılan web tarayıcınızda otomatik olarak açacak ve çalışır hale getirecektir.
 
 Artık projeyi kullanmaya hazırsınız!
+
 
 
