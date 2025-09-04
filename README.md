@@ -5,7 +5,7 @@ Bu proje, Türkiye'deki şehirlerin sürdürülebilirlik ve yatırım potansiyel
 Proje, Supabase veritabanı altyapısını ve OpenRouter üzerinden erişilen Deepseek yapay zeka modelini kullanarak yatırımcılara, şehir planlamacılarına ve araştırmacılara güçlü bir karar destek aracı sunar.
 
 🌟 Temel Özellikler
-🤖 Yapay Zeka Asistanı (Google Gemini Flash 2.5): OpenRouter platformu üzerinden çalışan asistan, "tarım yatırımı için en uygun şehirler hangileri?" gibi doğal dil sorgularını anlar ve size özel bir analiz senaryosu önerir.
+🤖 Yapay Zeka Asistanı (Deepseek): OpenRouter platformu üzerinden çalışan asistan, "tarım yatırımı için en uygun şehirler hangileri?" gibi doğal dil sorgularını anlar ve size özel bir analiz senaryosu önerir.
 
 🎯 Akıllı Veri Türü Tespiti: Yapay zeka, kullanıcı istemlerini analiz ederek ilgili veri türlerini (örneğin, "nüfus yoğunluğu", "tarım alanları") tam, kısmi ve bulanık eşleştirme (fuzzy matching) yöntemleriyle otomatik olarak tespit eder.
 
@@ -30,26 +30,34 @@ Markdown İşleme: Marked.js (Yapay zeka yanıtlarını formatlamak için)
 
 📂 **Proje Dosya Yapısı**
 ```plaintext
+├── 📁 data_csv                      # CSV verilerinin saklandığı klasör
+│   ├── 📄 TUM_VERILER_GSS.xlsx      # Genel veri seti, tüm verileri içerir.
+│   ├── 📄 agirliklar_rows.csv       # Ağırlıklandırma için kullanılan veri.
+│   ├── 📄 grup_rows.csv             # Veri türü gruplarına ait veriler.
+│   ├── 📄 iller_rows.csv            # Türkiye illerine ait veriler.
+│   ├── 📄 senaryo_rows.csv          # Ön tanımlı senaryolar için veriler.
+│   ├── 📄 veri_turleri_rows.csv     # Sistemdeki tüm veri metrikleri.
+│   └── 📄 veriler_rows.csv          # Ağırlıklandırılmış veya filtrelenmiş veriler.
 ├── 📁 src
 │   ├── 📁 css
-│   │   └── 📄 style.css       # Stil dosyası
+│   │   └── 📄 style.css            # Stil dosyası
 │   └── 📁 js
 │       ├── 📁 map
-│       │   └── 📄 mapManager.js   # Leaflet harita yönetimi ve katmanlar
+│       │   └── 📄 mapManager.js      # Leaflet harita yönetimi ve katmanlar
 │       ├── 📁 supabase
-│       │   ├── 📄 aiVeriTurleri.js  # AI tarafından kullanılacak veri türleri
-│       │   ├── 📄 client.js       # Supabase bağlantı ayarları
-│       │   ├── 📄 groups.js       # Veri türü grupları (örn: Demografi)
-│       │   ├── 📄 scenarios.js    # Hızlı senaryo verileri
-│       │   └── 📄 veriTurleri.js  # Tüm veri metrikleri
+│       │   ├── 📄 aiVeriTurleri.js   # AI tarafından kullanılacak veri türleri
+│       │   ├── 📄 client.js          # Supabase bağlantı ayarları
+│       │   ├── 📄 groups.js          # Veri türü grupları (örn: Demografi)
+│       │   ├── 📄 scenarios.js       # Hızlı senaryo verileri
+│       │   └── 📄 veriTurleri.js     # Tüm veri metrikleri
 │       └── 📁 ui
-│           ├── 📄 aiAssistant.js  # OpenRouter API ve AI mantığı
-│           ├── 📄 eventListener.js# Buton ve slider olay dinleyicileri
-│           ├── 📄 groups.js       # Arayüzdeki grupları oluşturan kod
-│           └── 📄 scenarios.js    # Arayüzdeki hızlı senaryoları oluşturan kod
-├── 📄 index.html              # Ana HTML dosyası
-├── 📄 README.md               # Bu döküman
-└── 📄 cities.geojson          # Türkiye illerinin coğrafi poligon verileri
+│           ├── 📄 aiAssistant.js     # OpenRouter API ve AI mantığı
+│           ├── 📄 eventListener.js   # Buton ve slider olay dinleyicileri
+│           ├── 📄 groups.js          # Arayüzdeki grupları oluşturan kod
+│           └── 📄 scenarios.js       # Arayüzdeki hızlı senaryoları oluşturan kod
+├── 📄 index.html                   # Ana HTML dosyası
+├── 📄 README.md                    # Bu döküman
+└── 📄 cities.geojson               # Türkiye illerinin coğrafi poligon verileri
 ```
 🚀 Kurulum ve Çalıştırma
 Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
@@ -62,7 +70,7 @@ Bir yerel sunucu aracı (örn: Live Server for VS Code)
 Bir OpenAI API anahtarı
 Bir Supabase API anahtarı
 
-Kurulum Adımları
+**Kurulum Adımları**
 1. Projeyi İndirin veya Klonlayın
 Projeyi bilgisayarınıza indirin.
 
@@ -73,7 +81,7 @@ Gereksinimler
 Visual Studio Code
 Live Server eklentisi
 
-Adımlar
+**Adımlar**
 Proje klasörünü Visual Studio Code ile açın.
 Eğer yüklü değilse Live Server eklentisini kurun.
 
@@ -86,7 +94,7 @@ src/js/ui/aiAssistant.js dosyasını açıp
     //this.apiKey = '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'; // OpenRouter API anahtarı (DeepSeek)
     this.apiKey = 'SİZİN_API_ANAHTARINIZ'; // OpenRouter API anahtarı
 
-Link: https://docs.google.com/document/d/1ANKJwP8dTDk-Tj2SzEPtDTnketL0bmTPhdOliluckwE/edit?usp=sharing
+Link*: https://docs.google.com/document/d/1ANKJwP8dTDk-Tj2SzEPtDTnketL0bmTPhdOliluckwE/edit?usp=sharing
 
 Sol taraftaki Dosya Gezgini'nden index.html dosyasına sağ tıklayın.
 
@@ -109,6 +117,7 @@ Ek olarak projeyi internet üzerinden görmek için bu linki ziyaret edebilirsin
 
             
             ✉️ farukkezerr@gmail.com
+
 
 
 
