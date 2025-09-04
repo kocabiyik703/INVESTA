@@ -64,7 +64,7 @@ class AIAssistant {
         this.enableLegacyEvents = false;
         
         //this.apiKey = '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'; // OpenRouter API anahtarı (DeepSeek)
-        this.apiKey =  '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';
+        this.apiKey =  '';
         // Chat geçmişi
         this.chatHistory = [];
     }
