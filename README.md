@@ -12,6 +12,9 @@ Türkiye'deki şehirlerin sürdürülebilirlik ve yatırım potansiyelini analiz
 
 Proje, PostgreSQL altyapısı ve OpenRouter üzerinden erişilen Deepseek yapay zeka modelini kullanarak yatırımcılara, şehir planlamacılarına ve araştırmacılara güçlü bir karar destek aracı sunar.
 
+<img width="1440" height="776" alt="Ekran Resmi 2025-09-09 12 07 40" src="https://github.com/user-attachments/assets/c79ec23d-611f-44f4-bbe7-6a3b9cac2ce2" />
+
+
 ## 🌟 Temel Özellikler
 **🤖 Yapay Zeka Asistanı (Deepseek):** OpenRouter platformu üzerinden çalışan asistan, "tarım yatırımı için en uygun şehirler hangileri?" gibi doğal dil sorgularını anlar ve size özel bir analiz senaryosu önerir.
 
@@ -67,32 +70,27 @@ Proje, PostgreSQL altyapısı ve OpenRouter üzerinden erişilen Deepseek yapay 
 ├── 📄 README.md                    # Bu döküman
 └── 📄 cities.geojson               # Türkiye illerinin coğrafi poligon verileri
 ```
-## 🚀 Kurulum ve Çalıştırma
-### Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
 
-**Gereksinimler**  
+## Tanıtım Videosu  
+
+[![YouTube-new-logo](https://github.com/user-attachments/assets/4f4579d2-a458-4771-bb6c-d06dd2ba10d0)](https://www.youtube.com/watch?v=LRMDnvOOBZQ)
+
+🔗 Tanıtım videosunu izlemek için yukarıdaki görsele tıklayın.
+## 🚀 Kurulum ve Çalıştırma
+
+### Gereksinimler  
 
 - Modern bir web tarayıcısı (Chrome, Firefox, Safari, Edge)  
 - Bir yerel sunucu aracı (örn: Live Server for VS Code)  
 - Bir OpenAI API anahtarı  
 - Bir Supabase API anahtarı  
 
-**Kurulum Adımları**
-1. Projeyi İndirin veya Klonlayın
-Projeyi bilgisayarınıza indirin.
+### Kurulum Adımları
+- Projeyi bilgisayarınıza indirin.
+- Proje, internet üzerindeki bir veritabanına bağlandığı ve ES modülleri kullandığı için bir yerel sunucu (local server) üzerinden çalıştırılmalıdır. Bunun için en kolay yöntem Visual Studio Code ve "Live Server" eklentisidir.  
+- Proje klasörünü Visual Studio Code ile açın. Eğer yüklü değilse Live Server eklentisini kurun.  
 
-🖥️ Projeyi Çalıştırma
-Proje, internet üzerindeki bir veritabanına bağlandığı ve ES modülleri kullandığı için bir yerel sunucu (local server) üzerinden çalıştırılmalıdır. Bunun için en kolay yöntem Visual Studio Code ve "Live Server" eklentisidir.
-
-Gereksinimler
-Visual Studio Code
-Live Server eklentisi
-
-**Adımlar**
-Proje klasörünü Visual Studio Code ile açın.
-Eğer yüklü değilse Live Server eklentisini kurun.
-
-src/js/ui/aiAssistant.js dosyasını açıp
+- src/js/ui/aiAssistant.js dosyasını açıp
 
     //this.apiKey = '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'; // OpenRouter API anahtarı (DeepSeek)
     
@@ -101,15 +99,13 @@ src/js/ui/aiAssistant.js dosyasını açıp
     //this.apiKey = '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'; // OpenRouter API anahtarı (DeepSeek)
     this.apiKey = 'SİZİN_API_ANAHTARINIZ'; // OpenRouter API anahtarı
 
-*Link: https://docs.google.com/document/d/1ANKJwP8dTDk-Tj2SzEPtDTnketL0bmTPhdOliluckwE/edit?usp=sharing
+**API Linkleri:** https://docs.google.com/document/d/1ANKJwP8dTDk-Tj2SzEPtDTnketL0bmTPhdOliluckwE/edit?usp=sharing
 
-Sol taraftaki Dosya Gezgini'nden index.html dosyasına sağ tıklayın.
+- Sol taraftaki Dosya Gezgini'nden index.html dosyasına sağ tıklayın.  
+ 
+- Açılan menüden "Open with Live Server" seçeneğine tıklayın. Bu işlem, projenizi varsayılan web tarayıcınızda otomatik olarak açacak ve çalışır hale getirecektir.  
 
-Açılan menüden "Open with Live Server" seçeneğine tıklayın.
-
-Bu işlem, projenizi varsayılan web tarayıcınızda otomatik olarak açacak ve çalışır hale getirecektir.
-
-Artık projeyi kullanmaya hazırsınız!
+**Artık projeyi kullanmaya hazırsınız!**
 
 ## 👥 Takım
 | Ad Soyad         | Ekip Rolü                            |
@@ -121,18 +117,13 @@ Artık projeyi kullanmaya hazırsınız!
 ## 🌐 DEMO
 
 INVEST@'yı aşağıdaki bağlantı üzerinden canlı olarak önizleyebilirsiniz:
-
 ### [Web Uygulaması](https://investa-demo-csb.vercel.app/)
 
- 📬 İletişim & Geri Bildirim
-    Daha fazla bilgi almak, değerli önerilerinizi ve fikirlerinizi bizimle paylaşmak için aşağıdaki e-posta adreslerine mesajınızı iletebilirsiniz. 
-           
-            👇
-            
-            ✉️ kocabiyik703@gmail.com
+## 📬 İletişim & Geri Bildirim
+Daha fazla bilgi almak, değerli önerilerinizi ve fikirlerinizi bizimle paylaşmak için aşağıdaki e-posta adreslerine mesajınızı iletebilirsiniz.                    
+✉️ kocabiyik703@gmail.com  
+✉️ farukkezerr@gmail.com  
 
-            
-            ✉️ farukkezerr@gmail.com
 
 
 
