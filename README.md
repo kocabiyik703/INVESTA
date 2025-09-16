@@ -1,34 +1,42 @@
-**Geleceğin Sürdürülebilir Şehirleri: Akıllı Şehir Yatırım Asistanı**
+# INVEST@ - Veri Tabanlı Yatırım Analizi
 
-Bu proje, Türkiye'deki şehirlerin sürdürülebilirlik ve yatırım potansiyelini analiz etmek için geliştirilmiş, yapay zeka destekli interaktif bir harita uygulamasıdır. Kullanıcılar, kendi yatırım vizyonlarına göre belirledikleri kriterlerle veya yapay zeka asistanının önerileriyle potansiyeli en yüksek olan şehirleri dinamik bir harita üzerinde görselleştirebilirler.
+📍 **Proje Türü:** Web Tabanlı Bölgesel Yatırım Asistanı  
+🎯 **Hackathon:** TEKNOFEST 2025 – Geleceğin Sürdürülebilir Şehirleri Hackathonu  
+📂 **Kategori:** Sektörel Yatırım Öncelikleri  
+👥 **Takım:** Mexicali Rose  
 
-Proje, Supabase veritabanı altyapısını ve OpenRouter üzerinden erişilen Deepseek yapay zeka modelini kullanarak yatırımcılara, şehir planlamacılarına ve araştırmacılara güçlü bir karar destek aracı sunar.
 
-🌟 Temel Özellikler
-🤖 Yapay Zeka Asistanı (Deepseek): OpenRouter platformu üzerinden çalışan asistan, "tarım yatırımı için en uygun şehirler hangileri?" gibi doğal dil sorgularını anlar ve size özel bir analiz senaryosu önerir.
+## 📌 Proje Özeti
 
-🎯 Akıllı Veri Türü Tespiti: Yapay zeka, kullanıcı istemlerini analiz ederek ilgili veri türlerini (örneğin, "nüfus yoğunluğu", "tarım alanları") tam, kısmi ve bulanık eşleştirme (fuzzy matching) yöntemleriyle otomatik olarak tespit eder.
+Türkiye'deki şehirlerin sürdürülebilirlik ve yatırım potansiyelini analiz etmek için geliştirilmiş, yapay zeka destekli interaktif bir harita uygulamasıdır. Kullanıcılar, kendi yatırım vizyonlarına göre belirledikleri kriterlerle veya yapay zeka asistanının önerileriyle potansiyeli en yüksek olan şehirleri dinamik bir harita üzerinde görselleştirebilirler.
 
-🧮 Otomatik Ağırlıklı Ortalama: Tespit edilen veya kullanıcı tarafından seçilen veri türleri için 1-10 arasında rastgele katsayılar atanır ve il bazında potansiyel skoru hesaplanır.
+Proje, PostgreSQL altyapısı ve OpenRouter üzerinden erişilen Deepseek yapay zeka modelini kullanarak yatırımcılara, şehir planlamacılarına ve araştırmacılara güçlü bir karar destek aracı sunar.
 
-🗺️ Dinamik ve İnteraktif Harita: Analiz sonuçları, anında bir renk skalasıyla Türkiye haritası üzerinde görselleştirilir. Bu sayede yatırım potansiyeli yüksek olan bölgeler kolayca ayırt edilebilir.
+## 🌟 Temel Özellikler
+**🤖 Yapay Zeka Asistanı (Deepseek):** OpenRouter platformu üzerinden çalışan asistan, "tarım yatırımı için en uygun şehirler hangileri?" gibi doğal dil sorgularını anlar ve size özel bir analiz senaryosu önerir.
 
-🔧 Özelleştirilebilir Analiz: Kullanıcılar, kenar çubuğundaki (sidebar) veri metriklerini kullanarak kendi yatırım önceliklerine göre senaryolar oluşturabilir ve katsayıları manuel olarak belirleyebilirler.
+**🎯 Akıllı Veri Türü Tespiti:** Yapay zeka, kullanıcı istemlerini analiz ederek ilgili veri türlerini (örneğin, "nüfus yoğunluğu", "tarım alanları") tam, kısmi ve bulanık eşleştirme (fuzzy matching) yöntemleriyle otomatik olarak tespit eder.
 
-⚡ Hızlı Senaryolar: Farklı yatırımcı profilleri için önceden tanımlanmış senaryolar sunarak hızlı bir başlangıç imkanı tanır.
+**🧮 Otomatik Ağırlıklı Ortalama:** Tespit edilen veya kullanıcı tarafından seçilen veri türleri için 1-10 arasında rastgele katsayılar atanır ve il bazında potansiyel skoru hesaplanır.
 
-🛠️ Kullanılan Teknolojiler
-Frontend: HTML5, CSS3, JavaScript (ES Modules)
+**🗺️ Dinamik ve İnteraktif Harita:** Analiz sonuçları, anında bir renk skalasıyla Türkiye haritası üzerinde görselleştirilir. Bu sayede yatırım potansiyeli yüksek olan bölgeler kolayca ayırt edilebilir.
 
-Haritalama: Leaflet.js
+**🔧 Özelleştirilebilir Analiz:** Kullanıcılar, kenar çubuğundaki (sidebar) veri metriklerini kullanarak kendi yatırım önceliklerine göre senaryolar oluşturabilir ve katsayıları manuel olarak belirleyebilirler.
 
-Yapay Zeka: Deepseek (via OpenRouter)
+**⚡ Hızlı Senaryolar:** Farklı yatırımcı profilleri için önceden tanımlanmış senaryolar sunarak hızlı bir başlangıç imkanı tanır.
 
-Veritabanı (Backend): Supabase
+## 🛠️ Kullanılan Teknolojiler
+**Frontend:** HTML5, CSS3, JavaScript (ES Modules)
 
-Markdown İşleme: Marked.js (Yapay zeka yanıtlarını formatlamak için)
+**Haritalama:** Leaflet.js
 
-📂 **Proje Dosya Yapısı**
+**Yapay Zeka:** Deepseek (via OpenRouter)
+
+**Veritabanı (Backend):** PostgreSQL
+
+**Markdown İşleme:** Marked.js (Yapay zeka yanıtlarını formatlamak için)
+
+## 📂 Proje Yapısı
 ```plaintext
 ├── 📁 data_csv                      # CSV ve Excel verilerinin saklandığı klasör
 │   ├── 📄 TUM_VERILER_GSS.xlsx      # Genel veri seti, tüm verileri içerir.
@@ -59,16 +67,15 @@ Markdown İşleme: Marked.js (Yapay zeka yanıtlarını formatlamak için)
 ├── 📄 README.md                    # Bu döküman
 └── 📄 cities.geojson               # Türkiye illerinin coğrafi poligon verileri
 ```
-🚀 Kurulum ve Çalıştırma
-Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
+## 🚀 Kurulum ve Çalıştırma
+### Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
 
-Gereksinimler
-Modern bir web tarayıcısı (Chrome, Firefox, Safari, Edge)
+**Gereksinimler**  
 
-Bir yerel sunucu aracı (örn: Live Server for VS Code)
-
-Bir OpenAI API anahtarı
-Bir Supabase API anahtarı
+- Modern bir web tarayıcısı (Chrome, Firefox, Safari, Edge)  
+- Bir yerel sunucu aracı (örn: Live Server for VS Code)  
+- Bir OpenAI API anahtarı  
+- Bir Supabase API anahtarı  
 
 **Kurulum Adımları**
 1. Projeyi İndirin veya Klonlayın
@@ -104,9 +111,18 @@ Bu işlem, projenizi varsayılan web tarayıcınızda otomatik olarak açacak ve
 
 Artık projeyi kullanmaya hazırsınız!
 
-**Ek olarak projeyi internet üzerinden görmek için bu linki ziyaret edebilirsiniz.** 
-    
-    https://investa-demo-csb.vercel.app/
+## 👥 Takım
+| Ad Soyad         | Ekip Rolü                            |
+|------------------|--------------------------------------|
+| Metin Kocabıyık  | Project Manager & Frontend Developer |
+| Faruk Kezer      | Backend Developer & Data Analyst     |
+
+
+## 🌐 DEMO
+
+INVEST@'yı aşağıdaki bağlantı üzerinden canlı olarak önizleyebilirsiniz:
+
+### [Web Uygulaması](https://investa-demo-csb.vercel.app/)
 
  📬 İletişim & Geri Bildirim
     Daha fazla bilgi almak, değerli önerilerinizi ve fikirlerinizi bizimle paylaşmak için aşağıdaki e-posta adreslerine mesajınızı iletebilirsiniz. 
