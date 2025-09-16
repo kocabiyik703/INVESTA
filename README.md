@@ -120,9 +120,11 @@ INVEST@'yı aşağıdaki bağlantı üzerinden canlı olarak önizleyebilirsiniz
 ### [Web Uygulaması](https://investa-demo-csb.vercel.app/)
 
 ## 📬 İletişim & Geri Bildirim
-Daha fazla bilgi almak, değerli önerilerinizi ve fikirlerinizi bizimle paylaşmak için aşağıdaki e-posta adreslerine mesajınızı iletebilirsiniz.                    
-✉️ kocabiyik703@gmail.com  
+Daha fazla bilgi almak, değerli önerilerinizi ve fikirlerinizi bizimle paylaşmak için aşağıdaki e-posta adreslerine mesajınızı iletebilirsiniz.   
+
+✉️ kocabiyik703@gmail.com   
 ✉️ farukkezerr@gmail.com  
+
 
 
 
