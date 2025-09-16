@@ -106,7 +106,7 @@ Artık projeyi kullanmaya hazırsınız!
 
 **Ek olarak projeyi internet üzerinden görmek için bu linki ziyaret edebilirsiniz.** 
     
-    https://mexicali-rose-demo.vercel.app/
+    https://investa-demo-csb.vercel.app/
 
  📬 İletişim & Geri Bildirim
     Daha fazla bilgi almak, değerli önerilerinizi ve fikirlerinizi bizimle paylaşmak için aşağıdaki e-posta adreslerine mesajınızı iletebilirsiniz. 
@@ -117,6 +117,7 @@ Artık projeyi kullanmaya hazırsınız!
 
             
             ✉️ farukkezerr@gmail.com
+
 
 
 
