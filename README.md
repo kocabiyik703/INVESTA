@@ -28,6 +28,11 @@ Proje, PostgreSQL altyapısı ve OpenRouter üzerinden erişilen Deepseek yapay 
 
 **⚡ Hızlı Senaryolar:** Farklı yatırımcı profilleri için önceden tanımlanmış senaryolar sunarak hızlı bir başlangıç imkanı tanır.
 
+## 🌐 DEMO
+
+INVEST@'yı aşağıdaki bağlantı üzerinden canlı olarak önizleyebilirsiniz:  
+### [Web Uygulaması](https://investa-demo-csb.vercel.app/)  
+
 ## 🛠️ Kullanılan Teknolojiler
 **Frontend:** HTML5, CSS3, JavaScript (ES Modules)
 
@@ -75,7 +80,8 @@ Proje, PostgreSQL altyapısı ve OpenRouter üzerinden erişilen Deepseek yapay 
 
 [![YouTube-new-logo](https://github.com/user-attachments/assets/4f4579d2-a458-4771-bb6c-d06dd2ba10d0)](https://www.youtube.com/watch?v=LRMDnvOOBZQ)
 
-🔗 Tanıtım videosunu izlemek için yukarıdaki görsele tıklayın.
+🔗 Tanıtım videosunu izlemek için yukarıdaki görsele tıklayın.  
+
 ## 🚀 Kurulum ve Çalıştırma
 
 ### Gereksinimler  
@@ -114,16 +120,14 @@ Proje, PostgreSQL altyapısı ve OpenRouter üzerinden erişilen Deepseek yapay 
 | Faruk Kezer      | Backend Developer & Data Analyst     |
 
 
-## 🌐 DEMO
 
-INVEST@'yı aşağıdaki bağlantı üzerinden canlı olarak önizleyebilirsiniz:
-### [Web Uygulaması](https://investa-demo-csb.vercel.app/)
 
 ## 📬 İletişim & Geri Bildirim
 Daha fazla bilgi almak, değerli önerilerinizi ve fikirlerinizi bizimle paylaşmak için aşağıdaki e-posta adreslerine mesajınızı iletebilirsiniz.   
 
 ✉️ kocabiyik703@gmail.com   
 ✉️ farukkezerr@gmail.com  
+
 
 
 
